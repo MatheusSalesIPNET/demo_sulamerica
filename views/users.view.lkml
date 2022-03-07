@@ -59,10 +59,6 @@ view: users {
     sql: ${TABLE}."LAST_NAME" ;;
   }
 
-  dimension: name {
-    sql: ${first_name} || ' ' || ${last_name} ;;
-  }
-
   dimension: latitude {
     type: number
     sql: ${TABLE}."LATITUDE" ;;
