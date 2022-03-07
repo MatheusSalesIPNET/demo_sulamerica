@@ -100,6 +100,7 @@ view: order_items {
   measure: total_sale_price {
     type: sum
     sql: ${sale_price} ;;
+    drill_fields: [order_id, id, user_id, users.name]
   }
 
   # ----- Sets of fields for drilling ------
